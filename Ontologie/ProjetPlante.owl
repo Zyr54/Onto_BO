@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#"
+     xml:base="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#ClimatCorrespond -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#ClimatCorrespond">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estClimat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#ContinentPossède -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#ContinentPossède">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#ProvientDe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#EauNecessaire -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#EauNecessaire">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedEau"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#LumNecessaire -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#LumNecessaire">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedLuminosite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedEau -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedEau">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Eau"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedLuminosite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedLuminosite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Luminosite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedSoleil -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedSoleil">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#SoleilNecessaire"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#soleil"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedTerreau -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#NeedTerreau">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TerreauNecessaire"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Terreau"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#ProvientDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#ProvientDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Continent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#SoleilNecessaire -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#SoleilNecessaire"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TerreauNecessaire -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TerreauNecessaire"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TypeCorrespond -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TypeCorrespond">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estDeType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#colore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#colore">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estColoree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estClimat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estClimat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Climat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estColoree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estColoree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Couleur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estDangereux -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estDangereux">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estDefense"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Dangerosite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estDeType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estDeType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TypePlante"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estDefense -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#estDefense"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Cout -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Cout"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#HauteurMax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#HauteurMax"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#HauteurMin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#HauteurMin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TempMax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TempMax"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TempMin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TempMin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Utilisable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Utilisable"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Apparence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Apparence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Attribut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Attribut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Attribut"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Besoin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Besoin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Climat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Climat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#LieuGeographique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Continent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#LieuGeographique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Couleur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Couleur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Apparence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Dangerosite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Dangerosite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Attribut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Eau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Eau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Nutritif"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Engrais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Engrais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Nutritif"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Entretien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Entretien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Besoin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Environement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Environement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Besoin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#LieuGeographique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#LieuGeographique"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Luminosite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Luminosite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Environement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Nutritif -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Nutritif">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Besoin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Occasion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Occasion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Odeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Odeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Attribut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Outil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Outil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Entretien"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Pot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Pot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Entretien"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Terreau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Terreau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Nutritif"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TypePlante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TypePlante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Attribut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Vent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Vent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Environement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#soleil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#soleil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Environement"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Afrique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Afrique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Alocasia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Alocasia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <NeedEau rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Moyen"/>
+        <NeedLuminosite rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#vive"/>
+        <NeedSoleil rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#sans"/>
+        <NeedTerreau rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#drainant"/>
+        <NeedTerreau rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#riche"/>
+        <ProvientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Asie"/>
+        <estClimat rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#tropical"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Verte"/>
+        <Cout rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</Cout>
+        <HauteurMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</HauteurMax>
+        <HauteurMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</HauteurMin>
+        <TempMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</TempMax>
+        <TempMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</TempMin>
+        <Utilisable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Utilisable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Aloe_Vera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Aloe_Vera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <NeedEau rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Peu"/>
+        <NeedTerreau rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#riche"/>
+        <ProvientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Afrique"/>
+        <ProvientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Asie"/>
+        <ProvientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Europe"/>
+        <estClimat rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#mediterraneen"/>
+        <estDangereux rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#epines"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Cactus"/>
+        <Cout rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</Cout>
+        <HauteurMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</HauteurMax>
+        <HauteurMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</HauteurMin>
+        <TempMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</TempMax>
+        <TempMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</TempMin>
+        <Utilisable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Utilisable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Amerique_Nord -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Amerique_Nord">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Amerique_Sud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Amerique_Sud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Asie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Asie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Beaucoup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Beaucoup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Eau"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Blanc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Blanc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Couleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Cactus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Cactus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TypePlante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Jaune -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Jaune">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Couleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Moyen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Moyen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Eau"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Ochidee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Ochidee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Plante"/>
+        <ProvientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Afrique"/>
+        <ProvientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Amerique_Nord"/>
+        <ProvientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Amerique_Sud"/>
+        <ProvientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Asie"/>
+        <ProvientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Océanie"/>
+        <estClimat rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#tropical"/>
+        <estColoree rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Blanc"/>
+        <estColoree rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Jaune"/>
+        <estColoree rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Pourpre"/>
+        <estColoree rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Rose"/>
+        <estColoree rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Rouge"/>
+        <estColoree rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Violet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Océanie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Océanie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Peu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Peu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Eau"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Pourpre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Pourpre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Couleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Rose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Rose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Couleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Rouge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Rouge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Couleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Verte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Verte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#TypePlante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Violet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Violet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Couleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#carnivore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#carnivore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Dangerosite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#direct -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#direct">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#soleil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#drainant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#drainant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Terreau"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#epines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#epines">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Dangerosite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#mediterraneen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#mediterraneen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Climat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#riche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#riche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Terreau"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#sans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#sans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#soleil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#toxique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#toxique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Dangerosite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#tropical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#tropical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Climat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#vive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#vive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#Luminosite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#0.5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#0.5"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/ProjetPlante#2"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
