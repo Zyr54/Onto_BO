@@ -1,0 +1,1029 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#"
+     xml:base="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:BandeOrignial="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorise">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estCategorisePar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#CreeAu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#CreeAu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#aCompose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#aCompose">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estComposePar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estCategorisePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estCategorisePar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estComposePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estComposePar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estDansUnivers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estDansUnivers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estDeType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estDeType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estFaitAvec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estFaitAvec"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estNeeDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estNeeDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pays"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#provientDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#provientDe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#provientDu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#provientDu"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Duree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Duree">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Parution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Parution">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#VueYoutube -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#VueYoutube">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#isTheme -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#isTheme">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Ambiance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Ambiance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Animation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Animation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Ambiance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Géographie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Géographie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Instrument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Instrument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JeuVidéo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JeuVidéo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Oeuvre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Oeuvre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Géographie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Serie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Serie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Univers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Univers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Ambiance"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AceAttorney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AceAttorney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JeuVidéo"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Moderne"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</Parution>
+        <rdfs:label>Ace Attorney</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Ace_attorney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Ace_attorney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Normal"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AceAttorney"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.44</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.15</VueYoutube>
+        <rdfs:label>Ace attorney Theme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AldnoahZero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AldnoahZero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Animation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Serie"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Science-Fiction"/>
+        <provientDu rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Parution>
+        <rdfs:label>Aldnoah.Zero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Allemagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Allemagne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pays"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AmeliePoulain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AmeliePoulain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Film"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Moderne"/>
+        <provientDu rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#France"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</Parution>
+        <rdfs:label>Amelie Poulain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pays"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Argentine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Argentine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pays"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AttackonTitan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AttackonTitan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Animation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Serie"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique"/>
+        <provientDu rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</Parution>
+        <rdfs:label>Attack on Titan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#BoufBowlTheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#BoufBowlTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#GuillaumeHouzé"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Epique"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Wakfu"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.02</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8</VueYoutube>
+        <isTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTheme>
+        <rdfs:label>BoufBowl Theme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#BraveHearts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#BraveHearts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Film"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Historique"/>
+        <provientDu rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</Parution>
+        <rdfs:label>BraveHearts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#BraveHeartsTheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#BraveHeartsTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JamesHorner"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#BraveHearts"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.44</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.3</VueYoutube>
+        <isTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTheme>
+        <rdfs:label>BraveHearts Theme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Instrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#CounterAttackMankind -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#CounterAttackMankind">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HiroyukiSawano"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Epique"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Vocal"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AttackonTitan"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.41</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</VueYoutube>
+        <rdfs:label>Counter Attack Mankind</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#DanMiyakawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#DanMiyakawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <rdfs:label>Dan Miyakawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Electronique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Electronique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Instrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Epique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Epique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Univers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Flute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Flute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Instrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pays"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#GourmetRace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#GourmetRace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#DanMiyakawa"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JunIshikawa"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Joyeux"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Electronique"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SuperSmashBrosUltimate"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.22</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</VueYoutube>
+        <rdfs:label>Gourmet Race</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#GuillaumeHouzé -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#GuillaumeHouzé">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#France"/>
+        <rdfs:label>Guillaume Houzé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#GustavoSantaolalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#GustavoSantaolalla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Argentine"/>
+        <rdfs:label>Gustavo Santoalla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HansZimmer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HansZimmer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Allemagne"/>
+        <rdfs:label>Hans Zimmer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HarryPotter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HarryPotter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Film"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique"/>
+        <provientDu rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique"/>
+        <provientDu rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Royaume-Uni"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</Parution>
+        <rdfs:label>Harry Potter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HeureuxEsteban -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HeureuxEsteban">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Joyeux"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Electronique"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Lesmystérieusecitésdor"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.04</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</VueYoutube>
+        <rdfs:label>Heureux Esteban</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HiroyukiSawano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HiroyukiSawano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <rdfs:label>Hiroyuki Sawano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Historique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Historique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Univers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Interstellartheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Interstellartheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HansZimmer"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Epique"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#interstellar"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.56</Duree>
+        <VueYoutube>101M</VueYoutube>
+        <isTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTheme>
+        <rdfs:label>Interstellar Theme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JacquesCardona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JacquesCardona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#France"/>
+        <rdfs:label>Jacques Cardona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JamesHorner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JamesHorner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique"/>
+        <rdfs:label>James Horner</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pays"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JohnHayes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JohnHayes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique"/>
+        <rdfs:label>John Hayes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JohnWilliams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JohnWilliams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique"/>
+        <rdfs:label>John Williams</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Joyeux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Joyeux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JunIshikawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JunIshikawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <rdfs:label>Jun Ishikawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JurrasicParkTheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JurrasicParkTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JohnWilliams"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.21</Duree>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</Duree>
+        <isTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTheme>
+        <rdfs:label>Jurrassic Park Theme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JurrassicPark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JurrassicPark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Film"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Science-Fiction"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</Parution>
+        <rdfs:label>Jurrassic Park</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#KojiKondo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#KojiKondo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <rdfs:label>Koji Kondo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#LeRoiLion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#LeRoiLion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Animation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Film"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</Parution>
+        <rdfs:label>Le Roi Lion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Lesmystérieusecitésdor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Lesmystérieusecitésdor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Animation"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Historique"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#France"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Luxembourg"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1983</Parution>
+        <rdfs:label>Les mystérieuse cités d’or</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Luxembourg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Luxembourg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pays"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Mkaliez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Mkaliez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HiroyukiSawano"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Epique"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Vocal"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AldnoahZero"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.41</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.8</VueYoutube>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Moderne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Moderne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Univers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#NoriyukiIwadare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#NoriyukiIwadare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <rdfs:label>Noriyuki Iwadare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Normal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Normal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Percussion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Percussion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Instrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Post-Apocalyptique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Post-Apocalyptique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Univers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#RememberWhoYouAre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#RememberWhoYouAre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HansZimmer"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Joyeux"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Percussion"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Vocal"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#LeRoiLion"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.48</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.6</VueYoutube>
+        <rdfs:label>Remember Who You Are</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Royaume-Uni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Royaume-Uni">
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Royaume-Uni"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Science-Fiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Science-Fiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Univers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SeasonofWar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SeasonofWar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JohnHayes"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Epique"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#WorldOfWarcraft"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.57</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.77</VueYoutube>
+        <rdfs:label>Season of War</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SuperMario64 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SuperMario64">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JeuVidéo"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique"/>
+        <provientDu rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</Parution>
+        <rdfs:label>Super Mario 64</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SuperMario64FileSelect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SuperMario64FileSelect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#KojiKondo"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Flute"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SuperMario64"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.58</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.665</VueYoutube>
+        <rdfs:label>Super Mario 64 File Select</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SuperSmashBrosUltimate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#SuperSmashBrosUltimate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JeuVidéo"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique"/>
+        <provientDu rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Japon"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</Parution>
+        <rdfs:label>Super Smash Bros Ultimate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#The_last_of_Us -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#The_last_of_Us">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JeuVidéo"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Post-Apocalyptique"/>
+        <provientDu rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Parution>
+        <rdfs:label>The last of Us</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#The_last_of_Us_theme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#The_last_of_Us_theme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#GustavoSantaolalla"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Triste"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.03</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.2</VueYoutube>
+        <isTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTheme>
+        <rdfs:label>The last of Us Theme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Triste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Triste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Vent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Vent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Instrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Vocal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Vocal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Instrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Wakfu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Wakfu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Animation"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</Parution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#WorldOfWarcraft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#WorldOfWarcraft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JeuVidéo"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Fantastique"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</Parution>
+        <rdfs:label>World of Warcraft</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#YannTiersen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#YannTiersen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
+        <estNeeDans rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#France"/>
+        <rdfs:label>Yann Tiersen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#interstellar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#interstellar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Film"/>
+        <estDansUnivers rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Science-Fiction"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Amerique"/>
+        <Parution rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Parution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#All_Gone_(no_escape) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#All_Gone_(no_escape)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#GustavoSantaolalla"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Triste"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#The_last_of_Us"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.54</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</VueYoutube>
+        <rdfs:label>All Gone (no escape)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Hedwig&apos;stheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Hedwig&apos;stheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#JohnWilliams"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Epique"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Vent"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#HarryPotter"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.10</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</VueYoutube>
+        <isTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTheme>
+        <rdfs:label>Hedwig&apos;s theme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Lavalsed&apos;Amelie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Lavalsed&apos;Amelie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estComposePar rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#YannTiersen"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Calme"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AmeliePoulain"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.15</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</VueYoutube>
+        <isTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTheme>
+        <rdfs:label>La valse d&apos;Amelie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pursuit(Cornered) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Pursuit(Cornered)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
+        <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Epique"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Electronique"/>
+        <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AceAttorney"/>
+        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.17</Duree>
+        <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3</VueYoutube>
+        <isTheme rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTheme>
+        <rdfs:label>Pursuit (Cornered)</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
