@@ -6,6 +6,7 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import *
 
+
 onto_path = "C:/Users/zyran/OneDrive/Documents/Cours/EMA/Web Semantique/App/Ontologie/BANDEORIGINAL.owl"
 onto = get_ontology(onto_path).load()
 
@@ -13,29 +14,35 @@ def MusicSelector():
     listResultCat=[]
     listResultUni=[]
     listResultInstru=[]
-    if (categorieEntry!="Pas de selection"):
+    #str(x).split(".")[1] for x in
+    if (categorieEntry.get()!="Pas de selection"):
         print("Cat yes")
         catSearch = onto.search_one(iri = "*"+categorieEntry.get())
         print(catSearch)
-        listResultCat=[str(x).split(".")[1] for x in onto.search(type = onto.Musique, estDeType=onto.search(is_a = catSearch))]
+        listResultCat=onto.search(type = onto.Musique, estDeType=onto.search(is_a = catSearch))
         print(listResultCat)
-    if (universEntry!="Pas de selection"):
+    if (universEntry.get()!="Pas de selection"):
         print("Uni yes")
         uniSearch = onto.search_one(iri = "*"+universEntry.get())
         print(uniSearch)
-        listResultUni=[str(x).split(".")[1] for x in onto.search(type = onto.Musique, estDeType=onto.search(is_a = uniSearch))]
+        listResultUni=onto.search(type = onto.Musique, provientDe=onto.search(is_a = onto.Oeuvre, estDansUnivers=onto.search(is_a = uniSearch)))
         print(listResultUni)
-    if (instruEntry!="Pas de selection"):
+    if (instruEntry.get()!="Pas de selection"):
         print("Instru yes")
         instruSearch = onto.search_one(iri = "*"+instruEntry.get())
         print(instruSearch)
-        listResultInstru=[str(x).split(".")[1] for x in onto.search(type = onto.Musique, estFaitAvec=onto.search(is_a = instruSearch))]
+        listResultInstru=onto.search(type = onto.Musique, estFaitAvec=onto.search(is_a = instruSearch))
         print(listResultInstru)
 
-    maxList=0
+    print("Test label")
+    for elem in listResultUni:
+        print(elem.label)
+
+    #maxList=0
     listMusic=[]
-    listOf=""
+    #listOf=""
     listMusicCounter=[]
+    """
     if ( (len(listResultCat) > len(listResultUni) ) and ( len(listResultCat) > len(listResultInstru) ) ):
         maxList=len(listResultCat)
         listOf="Cat"
@@ -45,10 +52,11 @@ def MusicSelector():
     else:
         maxList=len(listResultInstru)
         listOf="Instru"
+    """
 
     #print("ListOf: ", listOf)
     #print("maxList: ", maxList)
-
+    """
     if listOf=="Cat":
         for i in range(maxList):
             if ( (listResultCat[i] in listResultUni) and (listResultCat[i] in listResultInstru)):
@@ -82,6 +90,26 @@ def MusicSelector():
                 else:
                     listMusic.append(listResultInstru[i])
                     listMusicCounter.append(1)
+    """
+
+    for i in range(len(listResultCat)):
+        listMusic.append(listResultCat[i].label)
+        listMusicCounter.append(1)
+    for i in range(len(listResultUni)):
+        if(listResultUni[i].label in listMusic):
+            tracker=listMusic.index(listResultUni[i].label)
+            listMusicCounter[tracker]+=1
+        else:
+            listMusic.append(listResultUni[i].label)
+            listMusicCounter.append(1)
+    for i in range(len(listResultInstru)):
+        if(listResultInstru[i].label in listMusic):
+            tracker=listMusic.index(listResultInstru[i].label)
+            listMusicCounter[tracker]+=1
+        else:
+            listMusic.append(listResultInstru[i].label)
+            listMusicCounter.append(1)
+
 
     print(listMusic)
     print(listMusicCounter)
@@ -101,7 +129,11 @@ def MusicSelector():
     print(listMusicCounter)
     clear_text()
     for x in listMusic:
-        insert_text(x)
+        at=listMusic.index(x)
+        foundRate=round(listMusicCounter[at]/3, 2)
+        textAAfficher=foundRate,x
+        print(textAAfficher)
+        insert_text(textAAfficher)
 
 
 appScreen=Tk()
@@ -166,7 +198,7 @@ themeCB.grid(row=6, column=2)
 def insert_text(text):
     resultArea.config(state=NORMAL)
     resultArea.insert(INSERT,f"{text}\n")
-    resultArea.see(END)
+    #resultArea.see(END)
     resultArea.config(state=DISABLED)
     resultArea.update()
 
@@ -191,7 +223,11 @@ searchButton=Button(can,text="Rechercher",font="Calibri 16",overrelief ="ridge",
 searchButton.grid(row=7, column=1, columnspan=2)
 
 #Display résultat
-resultArea=Text(can, height=10, width=40, font="Calibri 16 bold", bd=4, relief=RIDGE, bg='#BBBBBB', state=DISABLED)
+scrollbar = Scrollbar(can)
+resultArea=Text(can, height=10, width=40, font="Calibri 16 bold", bd=4, relief=RIDGE, bg='#BBBBBB', state=DISABLED, yscrollcommand=scrollbar.set)
+scrollbar.grid(row=1, column=4, rowspan=7, padx=0, pady=0)
+scrollbar.config(command=resultArea.yview)
 resultArea.grid(row=1, column=3, rowspan=7, padx=20, pady=20)
+
 
 appScreen.mainloop()

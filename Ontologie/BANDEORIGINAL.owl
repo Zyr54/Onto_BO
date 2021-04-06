@@ -270,7 +270,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Ace_attorney">
         <rdf:type rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
         <estDeType rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Normal"/>
-        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Corde"/>
+        <estFaitAvec rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Electronique"/>
         <provientDe rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#AceAttorney"/>
         <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.44</Duree>
         <VueYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.15</VueYoutube>
