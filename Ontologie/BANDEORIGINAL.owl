@@ -25,7 +25,6 @@
     <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorise -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorise">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estCategorisePar"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Categorie"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
     </owl:ObjectProperty>
@@ -45,12 +44,6 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Auteur"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#Musique"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estCategorisePar -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nolan/ontologies/2021/2/BandeOrignial#estCategorisePar"/>
     
 
 
