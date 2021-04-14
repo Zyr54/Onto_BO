@@ -7,38 +7,31 @@ from tkinter import ttk
 from tkinter import *
 import re
 
+#Importation de l'ontologie
 owlready2.JAVA_EXE = "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/java.exe"
 onto_path = "C:/Users/zyran/OneDrive/Documents/Cours/EMA/Web Semantique/App/Ontologie/BANDEORIGINAL.owl"
 onto = get_ontology(onto_path).load()
 
+#Raisonneur mis en commentaire puisqu'il ne fonctionne pas
 #with onto:
     #sync_reasoner()
 
 
-
+#Fonction effectuant la recherche et affichant le résultat lors de l'appui du bouton rechercher
 def MusicSelector():
     listResultCat=[]
     listResultUni=[]
     listResultInstru=[]
-    #str(x).split(".")[1] for x in
+    #Pour chaque zone de sélection, si une sélection est faite, alors on va stocké dans une liste toutes les musiques ayant ce critère
     if (categorieEntry.get()!="Pas de selection"):
-        #print("Cat yes")
         catSearch = onto.search_one(iri = "*"+categorieEntry.get())
-        #print(catSearch)
         listResultCat=onto.search(type = onto.Musique, estDeType=onto.search(is_a = catSearch))
-        #print(listResultCat)
     if (universEntry.get()!="Pas de selection"):
-        #print("Uni yes")
         uniSearch = onto.search_one(iri = "*"+universEntry.get())
-        #print(uniSearch)
         listResultUni=onto.search(type = onto.Musique, provientDe=onto.search(is_a = onto.Oeuvre, estDansUnivers=onto.search(is_a = uniSearch)))
-        #print(listResultUni)
     if (instruEntry.get()!="Pas de selection"):
-        #print("Instru yes")
         instruSearch = onto.search_one(iri = "*"+instruEntry.get())
-        #print(instruSearch)
         listResultInstru=onto.search(type = onto.Musique, estFaitAvec=onto.search(is_a = instruSearch))
-        #print(listResultInstru)
 
     listMusic=[]
     listMusicCounter=[]
@@ -46,32 +39,38 @@ def MusicSelector():
     testPopular=populariteBool.get()
     testTheme=themeBool.get()
 
-    #print("TESTPOP=",testPopular)
+    #On parcours toutes les musiques dans la liste liée à la sélection "Catégorie"
     for i in range(len(listResultCat)):
+        # /!\ La clause if suivante n'aurait pas dû être implémentée en python si le Raisonneur avait fonctionné
+        #Si on veut des thèmes ET des musiques populaires seulement, alors on va vérifié que la i-ème musique de la liste possède ces 2 critères,
+        #Si c'est le cas, alors on l'ajoute dans la liste des musiques finales et on dit qu'elle a été trouvé dans une lise (cele-ci)
         if(testPopular and testTheme):
             if(listResultCat[i].VueYoutube>=5 and listResultCat[i].isTheme==True):
-                #print("Both Pop and Theme: ",listResultCat[i])
                 listMusic.append(listResultCat[i])
                 listMusicCounter.append(1)
+        #Sinon, si on veut des musiques populaire SEULEMENT, alors on vérifie que la i-ème musique l'est, si c'est le cas, alors on
+        #l'ajoute comme pour la clause précédente
         elif(testPopular):
-            #print("CAT: ",listResultCat[i]," vue=",listResultCat[i].VueYoutube)
             if(listResultCat[i].VueYoutube>=5):
-                #print("CAT: Test ok for: ",listResultCat[i])
                 listMusic.append(listResultCat[i])
                 listMusicCounter.append(1)
+        #Idem que pour la popularité seulement mais pour le thème seulement
         elif(testTheme):
             if(listResultCat[i].isTheme==True):
                 listMusic.append(listResultCat[i])
                 listMusicCounter.append(1)
+        #Et dans tout les autres cas, on ajoute la i-ème musique avec une valeur associée de 1
         else:
-            #print("CAT: Else pour: ", listResultCat[i])
             listMusic.append(listResultCat[i])
             listMusicCounter.append(1)
-        #print("CAT:",listMusic)
+
+    #Même principe que pour la liste des musique de la sélection catégorie, mais pour la liste de la sélection Univers
     for i in range(len(listResultUni)):
         if(testPopular and testTheme):
             if(listResultUni[i].VueYoutube>=5 and listResultUni[i].isTheme==True):
-                #print("Both Pop and Theme: ",listResultUni[i])
+                #Test de si la musique appartient deja à la liste des musique.
+                #Si c'est le cas, alors on va récupérer à quel index est la musique, et on va incrémenter son compteur de 1 pour dire
+                #qu'on la trouvé dans une autre liste
                 if(listResultUni[i] in listMusic):
                     tracker=listMusic.index(listResultUni[i])
                     listMusicCounter[tracker]+=1
@@ -79,9 +78,7 @@ def MusicSelector():
                     listMusic.append(listResultUni[i])
                     listMusicCounter.append(1)
         elif(testPopular):
-            #print("UNI: ",listResultUni[i]," vue=",listResultUni[i].VueYoutube)
             if(listResultUni[i].VueYoutube>=5):
-                #print("UNI: Test ok for: ",listResultUni[i])
                 if(listResultUni[i] in listMusic):
                     tracker=listMusic.index(listResultUni[i])
                     listMusicCounter[tracker]+=1
@@ -97,18 +94,17 @@ def MusicSelector():
                     listMusic.append(listResultUni[i])
                     listMusicCounter.append(1)
         else:
-            #print("UNI: Else pour: ", listResultUni[i])
             if(listResultUni[i] in listMusic):
                 tracker=listMusic.index(listResultUni[i])
                 listMusicCounter[tracker]+=1
             else:
                 listMusic.append(listResultUni[i])
                 listMusicCounter.append(1)
-        #print("UNI:",listMusic)
+
+    #Exactement le même principe que pour la liste de la sélection d'univers
     for i in range(len(listResultInstru)):
         if(testPopular and testTheme):
             if(listResultInstru[i].VueYoutube>=5 and listResultInstru[i].isTheme==True):
-                #print("Both Pop and Theme: ",listResultInstru[i])
                 if(listResultInstru[i] in listMusic):
                     tracker=listMusic.index(listResultInstru[i])
                     listMusicCounter[tracker]+=1
@@ -116,9 +112,7 @@ def MusicSelector():
                     listMusic.append(listResultInstru[i])
                     listMusicCounter.append(1)
         elif(testPopular):
-            #print("INSTRU: ",listResultInstru[i]," vue=",listResultInstru[i].VueYoutube)
             if(listResultInstru[i].VueYoutube>=5):
-                #print("INSTRU: Test ok for: ",listResultInstru[i])
                 if(listResultInstru[i] in listMusic):
                     tracker=listMusic.index(listResultInstru[i])
                     listMusicCounter[tracker]+=1
@@ -134,18 +128,15 @@ def MusicSelector():
                     listMusic.append(listResultInstru[i])
                     listMusicCounter.append(1)
         else:
-            #print("INSTRU: Else pour: ", listResultInstru[i])
             if(listResultInstru[i] in listMusic):
                 tracker=listMusic.index(listResultInstru[i])
                 listMusicCounter[tracker]+=1
             else:
                 listMusic.append(listResultInstru[i])
                 listMusicCounter.append(1)
-        #print("INSTRU:",listMusic)
 
-    print(listMusic)
-    print(listMusicCounter)
-
+    #On va trier la liste des musique par rapport à leurs pertinence par rapport aux critères de recherches
+    #On procède donc avec un tri par insertion
     for i in range(len(listMusic)):
         for k in range(i, len(listMusic)):
             if listMusicCounter[k]>listMusicCounter[i]:
@@ -156,12 +147,12 @@ def MusicSelector():
                 listMusicCounter[i]=temp
                 listMusic[i]=temp2
 
-    print("Listes triees par counter decroissant")
-    print(listMusic)
-    print(listMusicCounter)
+
     clear_text()
     count=0
     musicsInPlaylist=0
+    #On vérifie qu'un temps de playlist max n'est pas précisé, si y'a à un, alors on va compté combien de musiques de la liste on peut afficher
+    #On utilise donc un compteur qui servira plus tard
     if(tempsPlaylistVar.get()!=''):
         tempsMax=tempsPlaylistVar.get()
         minuteCumulee=0
@@ -178,12 +169,10 @@ def MusicSelector():
             musicsInPlaylist+=1
             if(minuteCumulee>int(tempsMax)):
                 break
-            #print(minuteCumulee,":",secondeCumulee)
-            #print("Minute de la musique: "+MinuteMusique)
-            #print("Seconde de la musique: "+SecondeMusique)
 
 
     rate=0
+    #On compte combien de critères ont été utilisés
     if(categorieEntry.get()!="Pas de selection"):
         rate+=1
     if(universEntry.get()!="Pas de selection"):
@@ -191,8 +180,8 @@ def MusicSelector():
     if(instruEntry.get()!="Pas de selection"):
         rate+=1
 
+    #On affiche dans la zone d'affichage, dans l'ordre: Le taux de pertinence, le titre de la musique, le nom de l'oeuvre, le temps de la musique
     for x in listMusic:
-        #print("Is",x,"a theme? ",x.isTheme)
         count+=1
         at=listMusic.index(x)
         foundRate=round(listMusicCounter[at]/rate, 2)
@@ -203,6 +192,8 @@ def MusicSelector():
         textAAfficher=re.sub(r"\[|\]|'|\"","",textAAfficher)
         print(textAAfficher)
         insert_text(textAAfficher)
+        #On vérifie qu'on ne dépasse pas le nombre de musique max demandée ET le temps de la playlist (donc le nombre de musique max calculé au préalable),
+        #Ou l'un des deux
         if(nbrMusiqueVar.get()!='') and (tempsPlaylistVar.get()!=''):
             if(count>=int(nbrMusiqueVar.get())) or (count>=musicsInPlaylist):
                 break
@@ -275,7 +266,7 @@ themeCB.grid(row=6, column=2)
 
 
 
-#Gestion bouton recherche
+#Fonction d'affichage de texte
 def insert_text(text):
     resultArea.config(state=NORMAL)
     resultArea.insert(INSERT,f"{text}\n")
@@ -283,23 +274,12 @@ def insert_text(text):
     resultArea.config(state=DISABLED)
     resultArea.update()
 
+#Fonction pour delete le texte
 def clear_text():
     resultArea.config(state=NORMAL)
     resultArea.delete('1.0', END)
     resultArea.config(state=DISABLED)
     resultArea.update()
-
-i = 0
-def noCommandyet():
-    global i
-    resultArea.config(state=NORMAL)
-    resultArea.insert(INSERT,f"Bouton recherche appuye {i}\n")
-    i += 1
-    resultArea.see(END)
-    resultArea.config(state=DISABLED)
-    resultArea.update()
-
-
 
 searchButton=Button(can,text="Rechercher",font="Calibri 16",overrelief ="ridge",command=MusicSelector)
 searchButton.grid(row=7, column=1, columnspan=2)
